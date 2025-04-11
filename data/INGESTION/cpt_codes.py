@@ -25,4 +25,4 @@ for col in cptcodes_df.columns:
             .option("table", BQ_TABLE)
             .option("temporaryGcsBucket", TEMP_GCS_BUCKET)
             .mode("overwrite")
-            .save())
+            .save()
