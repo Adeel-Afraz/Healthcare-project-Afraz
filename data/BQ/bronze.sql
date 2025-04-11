@@ -11,7 +11,6 @@ CREATE EXTERNAL TABLE IF NOT EXISTS `avd-practice-1.Project_Bronze.encounters_ha
 OPTIONS (
   format = 'JSON',
   uris = ['gs://heathcare-bucket-25032025/landing/hospital-a/encounters/*.json']
-  autodetect = true
 );
 
 CREATE EXTERNAL TABLE IF NOT EXISTS `avd-practice-1.Project_Bronze.patients_ha`
