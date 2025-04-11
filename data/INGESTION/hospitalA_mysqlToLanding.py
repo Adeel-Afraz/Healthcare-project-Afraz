@@ -16,7 +16,7 @@ GCS_BUCKET = "heathcare-bucket-25032025"
 HOSPITAL_NAME = "hospital-a"
 LANDING_PATH = f"gs://{GCS_BUCKET}/landing/{HOSPITAL_NAME}/"
 ARCHIVE_PATH = f"gs://{GCS_BUCKET}/landing/{HOSPITAL_NAME}/archive/"
-CONFIG_FILE_PATH = f"gs://{GCS_BUCKET}/configs/load_config.csv"
+CONFIG_FILE_PATH = f"gs://{GCS_BUCKET}/config/load_config.csv"
 
 # BigQuery Configuration
 BQ_PROJECT = "avd-databricks-demo"
