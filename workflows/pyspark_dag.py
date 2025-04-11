@@ -10,10 +10,10 @@ from airflow.providers.google.cloud.operators.dataproc import (
 )
 
 # define the variables
-PROJECT_ID = "avd-databricks-demo"
+PROJECT_ID = "avd-practice-1"
 REGION = "us-east1"
-CLUSTER_NAME = "my-demo-cluster"
-COMPOSER_BUCKET = "us-central1-demo-instance-a649b781-bucket" ## change this 
+CLUSTER_NAME = "my-demo-cluster3"
+COMPOSER_BUCKET = "us-central1-demo-instance-4e820ca5-bucket" ## change this
 
 GCS_JOB_FILE_1 = f"gs://{COMPOSER_BUCKET}/data/INGESTION/hospitalA_mysqlToLanding.py"
 PYSPARK_JOB_1 = {
@@ -45,7 +45,7 @@ PYSPARK_JOB_4 = {
 
 
 ARGS = {
-    "owner": "SHAIK SAIDHUL",
+    "owner": "Mirza Adeel Afraz Baig",
     "start_date": None,
     "depends_on_past": False,
     "email_on_failure": False,

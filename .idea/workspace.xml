@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d305fa0-d697-43f0-9caa-48d2cb64abc7" name="Changes" comment="" />
+    <list default="true" id="9d305fa0-d697-43f0-9caa-48d2cb64abc7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/bq_dag.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/bq_dag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/parent_dag.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/parent_dag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/pyspark_dag.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/pyspark_dag.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -101,6 +112,23 @@
       <option name="presentableId" value="Default" />
       <updated>1744359420292</updated>
     </task>
+    <task id="LOCAL-00001" summary="new files added">
+      <option name="closed" value="true" />
+      <created>1744362170497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744362170497</updated>
+    </task>
+    <task id="LOCAL-00002" summary="yaml file updated">
+      <option name="closed" value="true" />
+      <created>1744362296337</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744362296337</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,5 +141,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new files added" />
+    <MESSAGE value="yaml file updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="yaml file updated" />
   </component>
 </project>
