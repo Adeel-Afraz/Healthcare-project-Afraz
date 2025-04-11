@@ -26,7 +26,7 @@ BQ_TEMP_PATH = f"{GCS_BUCKET}/temp/"
 
 # MySQL Configuration
 MYSQL_CONFIG = {
-    "url": "jdbc:mysql://35.188.175.88:3306/hospital_a_db?useSSL=false&allowPublicKeyRetrieval=true",
+    "url": "jdbc:mysql://35.188.175.88:3306/hospital-a-db?useSSL=false&allowPublicKeyRetrieval=true",
     "driver": "com.mysql.cj.jdbc.Driver",
     "user": "myuser",
     "password": "pass123"
@@ -109,7 +109,7 @@ def get_latest_watermark(table_name):
     query = f"""
         SELECT MAX(load_timestamp) AS latest_timestamp
         FROM `{BQ_AUDIT_TABLE}`
-        WHERE tablename = '{table_name}' and data_source = "hospital_a_db"
+        WHERE tablename = '{table_name}' and data_source = "hospital-a-db"
     """
     query_job = bq_client.query(query)
     result = query_job.result()
@@ -149,7 +149,7 @@ def extract_and_save_to_landing(table, load_type, watermark_col):
         
         # Insert Audit Entry
         audit_df = spark.createDataFrame([
-            ("hospital_a_db", table, load_type, df.count(), datetime.datetime.now(), "SUCCESS")], 
+            ("hospital-a-db", table, load_type, df.count(), datetime.datetime.now(), "SUCCESS")], 
             ["data_source", "tablename", "load_type", "record_count", "load_timestamp", "status"])
 
         (audit_df.write.format("bigquery")
@@ -174,7 +174,7 @@ def read_config_file():
 config_df = read_config_file()
 
 for row in config_df.collect():
-    if row["is_active"] == '1' and row["datasource"] == "hospital_a_db": 
+    if row["is_active"] == '1' and row["datasource"] == "hospital-a-db": 
         db, src, table, load_type, watermark, _, targetpath = row
         move_existing_files_to_archive(table)
         extract_and_save_to_landing(table, load_type, watermark)
