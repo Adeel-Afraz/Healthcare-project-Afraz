@@ -22,7 +22,7 @@ BQ_Log_Table = f'{BQ_Project}.temp_dataset.Pipeline_logs'
 BQ_Temp_Path = f'gs://{GCS_Bucket}/temp/'
 
 MYSQL_Config = {
-    'url': 'jdbc:mysql://35.188.50.97:3306/hospital-b-db?useSSL=false&allowPublicKeyRetrieval=true',
+    'url': 'jdbc:mysql://35.188.50.97:3306/hospital-b-db?usessl=false&allowpublickeyretrival=true',
     'driver': 'com.mysql.cj.jdbc.Driver',
     'user': 'myuser',
     'password': 'pass123'
