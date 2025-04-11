@@ -79,4 +79,4 @@ if response.status_code == 200:
     else:
         print("No detailed results found.")
 else:
-    print(f"Failed to fetch data: {response.status_code} - {response.text}")
+    print(f"Failed to fetch data: {response.status_code} - {response.text}"
