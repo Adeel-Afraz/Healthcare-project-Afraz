@@ -11,7 +11,7 @@ spark = SparkSession.builder.appName('HospitalAMYSQLToLanding').getOrCreate()
 
 # Configuration variables
 GCS_Bucket = 'heathcare-bucket-25032025'
-Hospital_name = 'hospital-a'
+Hospital_name = 'hospital-b'
 Landing_path = f'gs://{GCS_Bucket}/landing/{Hospital_name}/'
 Archive_path = f'gs://{GCS_Bucket}/landing/{Hospital_name}/archive/'
 Config_File_path = f"gs://{GCS_Bucket}/config/load_config.csv"
