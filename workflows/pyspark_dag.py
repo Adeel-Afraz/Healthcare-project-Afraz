@@ -11,7 +11,7 @@ from airflow.providers.google.cloud.operators.dataproc import (
 
 # define the variables
 PROJECT_ID = "avd-practice-1"
-REGION = "us-east1"
+REGION = "us-east1-c"
 CLUSTER_NAME = "my-demo-cluster2"
 COMPOSER_BUCKET = "us-central1-demo-instance-de88b9ae-bucket" ## change this
 
